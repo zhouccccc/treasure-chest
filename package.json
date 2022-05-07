@@ -1,0 +1,46 @@
+{
+  "name": "teamo",
+  "version": "0.0.1",
+  "description": "Collection of useful javascript functions",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "eslint . --ext .js,.ts",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhouccccc/treasure-chest.git"
+  },
+  "keywords": [],
+  "author": "Chengcheng.ZHOU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhouccccc/treasure-chest/issues"
+  },
+  "homepage": "https://github.com/zhouccccc/treasure-chest#readme",
+  "devDependencies": {
+    "@types/jest": "^27.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.1.5",
+    "jest": "^28.1.0",
+    "prettier": "^2.6.2",
+    "ts-jest": "^28.0.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.6.4"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
