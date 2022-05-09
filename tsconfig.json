@@ -1,4 +1,14 @@
 {
+  "include": ["./src"],
+  "exclude": ["node_modules", "**/__tests__/*"],
+  "compilerOptions": {
+    "strict": true,
+    "declaration": true,
+    "outDir": "./lib",
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es6"]
+  },
   "rules": {
     "interface-name": false,
     "trailing-comma": false,
@@ -21,15 +31,5 @@
     "ban-types": false,
     "no-conditional-assignment": false,
     "radix": false
-  },
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "declaration": true,
-    "outDir": "./lib",
-    "strict": true,
-    "lib": ["es6"]
-  },
-  "include": ["src"],
-  "exclude": ["node_modules", "**/__tests__/*"]
+  }
 }
