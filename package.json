@@ -1,6 +1,6 @@
 {
   "name": "teamo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Collection of useful javascript functions",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -28,6 +28,7 @@
   "homepage": "https://github.com/zhouccccc/treasure-chest#readme",
   "devDependencies": {
     "@types/jest": "^27.5.0",
+    "@types/lodash": "^4.14.182",
     "@typescript-eslint/eslint-plugin": "^5.22.0",
     "@typescript-eslint/parser": "^5.22.0",
     "eslint": "^8.15.0",
@@ -41,5 +42,8 @@
   },
   "files": [
     "lib/**/*"
-  ]
+  ],
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
